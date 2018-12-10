@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form>
+        <label>First Name: <input name="firstname" type="text" placeholder="First Name" required></label>
+        <label>Last Name: <input name="lastname" type="text" placeholder="Last Name" required></label>
+        <p></p>
+        <label for="male">Male </label>
+        <input name="gender" id="male" type="radio" value="male">
+        <label for="female">Female </label>
+        <input name="gender" id="female" type="radio" value="female">
+        <label for="other">Other </label>
+        <input name="gender" id="other" type="radio" value="other">
+        <p></p>
+        <label>Email: <input name="email" type="email" placeholder="email" required></label>
+        <label>Password: <input pattern=".{5,10}" name="password" type="Password" placeholder="password" required title="5 to 10 characters"></label>
+        <p></p>
+        <label>Birthday: </label>
+        <select name="Month" id="month">
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="august">August</option>
+            <option value="september">September</option>
+            <option value="october">October</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+        </select>
+        <button>Submit</button>
+      </form>
+</body>
+</html>
