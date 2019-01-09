@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Patap Clone</title>
+    <link rel="stylesheet" href="Assets/css/canvas.css">
+    <script src="Assets\js\libs\paper-full.min.js"></script>
+    <script type="text/paperscript" canvas="myCanvas">
+        for (var x = 0; x < 1000; x += 100) {
+            for (var y = 0; y < 1000; y += 100) {
+                new Path.Circle(new Point(x, y), 10).fillColor = "purple";
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <canvas id="myCanvas" resize></canvas>
+</body>
+
+</html>
